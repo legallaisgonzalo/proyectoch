@@ -1,0 +1,52 @@
+.h1{
+    align-items: center;
+    display: flex;
+    color: black
+}
+.Titulo{
+    display: flex;
+    text-align:justify;
+    align-items: center;
+    flex-direction: column;
+    padding: 1;
+    font-family: 'Raleway', sans-serif;
+}
+.menuLogo{
+    justify-content: center;
+    flex-direction: row;
+    height: 5hv;
+    width: auto;
+    margin: 3em;
+}
+
+
+
+.li{
+
+    text-decoration: none;
+    font-size: 18px;
+    display: in-line block;
+    padding: 2px;
+    transition:  2s;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: black;
+    line-height: 1em; 
+    width: 100%;   
+    margin: 1.5em;
+}
+.carrito{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 1.4em;
+    float: right;
+    text-decoration: none;
+    display: flex;
+
+}
+
+.li:hover{
+    border-bottom: 2px black solid;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
