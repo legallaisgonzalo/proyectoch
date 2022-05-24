@@ -1,0 +1,16 @@
+.art{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 1em;
+}
+.articulos{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    height: 100vh;
+}
+.li{
+    padding: 2px;
+}

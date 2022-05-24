@@ -3,25 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from "react-router-dom";
-import { Routes, Route } from 'react-router-dom';
-import { Articulos } from './routes/Articulos';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+
     
 
       <App/> 
      
-      <Routes>
-        <Route path="expenses" element={<Articulos />} />
-      </Routes>
 
 
-    </BrowserRouter>
+
   </React.StrictMode>
 );
 
