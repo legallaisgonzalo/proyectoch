@@ -2,6 +2,7 @@ import "./App.css";
 import React from "react";
 import { Navbar } from "./components/Navbar";
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
+import { Counter } from "./components/Counter";
 
 function App() {
   const prenda1 = {
@@ -30,6 +31,7 @@ function App() {
         prenda3={prenda3.tipo}
         prenda4={prenda4.tipo}
       />
+      <Counter/>
     </div>
   );
 }
