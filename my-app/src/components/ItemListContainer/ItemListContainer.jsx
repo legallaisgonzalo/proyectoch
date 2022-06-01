@@ -1,24 +1,44 @@
-import styles from "../ItemListContainer/Articulos.module.css"
+import { useEffect } from "react";
+import { useState } from "react";
+import { Spinner } from "react-bootstrap";
+import { pedirDatos } from "../../mock/pedirDatos";
+import ItemList from "../ItemList/ItemList"
 
-export const ItemListContainer = ({prenda1,prenda2,prenda3,prenda4}) => {
+
+
+
+export const ItemListContainer = ({ prenda1, prenda2, prenda3, prenda4 }) => {
+  const [items, setItems] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+
+
+  useEffect(() => {
+    setLoading(true);
+
+    pedirDatos()
+      .then((resp) => {
+        setItems(resp);
+      })
+      .catch((error) => {
+        console.log("ERROR", error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, []);
+
   return (
-    <div className={styles.titulo}>
-      <div className="container">
-        <div className="row articulos">
-          <div className="col-sm-6 col-md-3 col-12">
-            <div className={styles.art}>Articulo 1 {prenda1}</div>
-          </div>
-          <div className="col-sm-6 col-md-3 col-12">
-            <div className={styles.art}>Articulo 2 {prenda2} </div>
-          </div>
-          <div className="col-sm-6 col-md-3 col-12">
-            <div className={styles.art}>Articulo 3 {prenda3} </div>
-          </div>
-          <div className="col-sm-6 col-md-3 col-12">
-            <div className={styles.art}>Articulo 4 {prenda4}</div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <section className="container my-5">
+      
+      <hr />
+      { loading ? 
+        <Spinner animation="border" role="status">
+          <span className="visually"></span>
+        </Spinner>
+       : 
+       <ItemList items={items}/>
+      }
+    </section>
   );
 };

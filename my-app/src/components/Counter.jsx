@@ -10,15 +10,13 @@ export const Counter = () => {
         setContador (contador + 1)
     }
 
-    const decrementar = () => {
-        setContador (contador - 1)
-    }
+
 
   return (
     <div>
         <h1>Contador! </h1>
         <p className={styles.contador}>{contador}</p>
-        <button className='btn btn-danger' onClick={decrementar}>Decrementar</button>
+        
         <button className='btn btn-succes' onClick={incrementar}>Incrementar</button>
 
 
