@@ -17,3 +17,10 @@
 .contador{
     font-size: 30px;
 }
+.item{
+    display: flex;
+    flex-direction: row;
+    width:auto;
+    justify-content: center;
+    align-items: center;
+}

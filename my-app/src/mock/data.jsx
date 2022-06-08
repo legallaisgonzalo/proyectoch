@@ -1,8 +1,8 @@
 const productos = [
     {
       id: 1,
-      nombre: "producto 1",
-      desc: "una descripcion",
+      nombre: "Maceta PokeBola",
+      desc: "Maceta de la pokebolla",
       precio: 1200,
       img: "https://via.placeholder.com/220",
     },
@@ -27,13 +27,7 @@ const productos = [
       precio: 1200,
       img: "https://via.placeholder.com/220",
     },
-    {
-      id: 5,
-      nombre: "producto 5",
-      desc: "una descripcion",
-      precio: 1200,
-      img: "https://via.placeholder.com/220",
-    },
+
   ];
 
   export default productos;

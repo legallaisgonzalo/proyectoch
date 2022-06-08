@@ -13,7 +13,7 @@ export const Counter = () => {
 
 
   return (
-    <div>
+    <div className="container my-5">
         <h1>Contador! </h1>
         <p className={styles.contador}>{contador}</p>
         

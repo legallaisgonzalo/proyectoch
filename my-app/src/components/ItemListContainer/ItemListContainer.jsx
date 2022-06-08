@@ -7,7 +7,7 @@ import ItemList from "../ItemList/ItemList"
 
 
 
-export const ItemListContainer = ({ prenda1, prenda2, prenda3, prenda4 }) => {
+export const ItemListContainer = () => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
 

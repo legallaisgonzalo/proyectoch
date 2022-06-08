@@ -1,18 +1,17 @@
-import Item from "../Item/Item"
+import Item from "../Item/Item";
+import styles from "../ItemListContainer/Articulos.module.css";
 
-const ItemList = ({items}) => {
-    return(
-        <div>
-         
-          {
+const ItemList = ({ items }) => {
+  return (
+    <div className="container">
+      <div className={styles.item}>
+        {items.map((item) => (
+          <Item key={item.id} item={item} />
 
-            items.map((item) => <Item key={item.id} item={item} /> )
+        ))}
+      </div>
+    </div>
+  );
+};
 
-          }
-            
-     
-        ))
-        </div>
-)}
-
-export default ItemList
+export default ItemList;
