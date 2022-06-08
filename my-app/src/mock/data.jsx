@@ -1,8 +1,8 @@
 const productos = [
     {
       id: 1,
-      nombre: "Maceta PokeBola",
-      desc: "Maceta de la pokebolla",
+      nombre: "producto 1",
+      desc: "una descripcion",
       precio: 1200,
       img: "https://via.placeholder.com/220",
     },
