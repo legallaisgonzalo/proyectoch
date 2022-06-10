@@ -3,15 +3,15 @@ import { Link } from "react-router-dom"
 
 
 
-const Item = ({items}) =>{
+const Item = ({item}) =>{
 
     return(
         <div className="container">
-            <h2>{items.nombre}</h2>
-            <img src={items.img} alt="foto" />
-            <p>{items.desc}</p>
-            <h4>Precio ${items.precio}</h4>
-                 <Link to={`/itemDetail/${items.id}`}>
+            <h2>{item.nombre}</h2>
+            <img src={item.img} alt="foto" />
+            <p>{item.desc}</p>
+            <h4>Precioso ${item.precio}</h4>
+                 <Link to={`/itemDetail/${item.id}`}>
                     <button className="btn btn-primary my-2">Ver más</button>
                 </Link>
             <hr />

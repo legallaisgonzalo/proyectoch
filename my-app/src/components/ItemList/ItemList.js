@@ -1,7 +1,7 @@
 import Item from "../Item/Item";
 import styles from "../ItemListContainer/Articulos.module.css";
 
-export const ItemList = ({ items }) => {
+const ItemList = ({ items }) => {
   return (
     <div className="container">
 
@@ -21,4 +21,5 @@ export const ItemList = ({ items }) => {
 
 };
 
+export default ItemList;
 

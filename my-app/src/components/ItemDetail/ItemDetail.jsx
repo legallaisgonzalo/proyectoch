@@ -2,11 +2,10 @@ import { useEffect, useState } from "react"
 import { Spinner } from "react-bootstrap"
 import { pedirDatos } from "../../mock/pedirDatos"
 import { useParams } from "react-router-dom"
-import { ItemList } from "../ItemList/ItemList"
-import { ItemDetailContainer } from "../ItemDetailContainer/ItemDetailContainer"
+import ItemProd   from  "../Item/Item"
 
 
-//esto por que esta 
+
 
 export const ItemDetail = ({item}) => {
 
@@ -49,7 +48,7 @@ export const ItemDetail = ({item}) => {
           <span className="visually"></span>
         </Spinner>
        : 
-       <ItemDetailContainer items={ItemDetail}/>
+       <ItemProd items={items}/>
 
 
       }
