@@ -5,7 +5,7 @@ import { ItemListContainer } from "./components/ItemListContainer/ItemListContai
 import { Counter } from "./components/Counter";
 import { PokeApi } from "./components/PokeApi/PokeApi";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ItemDetail } from "./components/ItemDetail/ItemDetail";
+import { ItemDetailContainer }  from "./components/ItemDetailContainer/ItemDetailContainer";
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
         <Route path='/' element={<ItemListContainer/>} />
         <Route path='/PokeApi' element={<PokeApi/>}/>
         <Route path='/Counter' element={<Counter/>}/>
-        <Route path='/ItemDetail' element={<ItemDetail/>}/>
+        <Route path='/ItemDetail/:itemId' element={<ItemDetailContainer/>}/>
       
       </Routes>
     </BrowserRouter>

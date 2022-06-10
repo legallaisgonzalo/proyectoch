@@ -4,10 +4,10 @@ import { CartWidget } from "./CartWidget";
 export const Navbar = () => {
 
   return (
-    <div className="container">
-      <h1 className={styles.Titulo}>LOUIS VUITTON</h1>
+    <div className="container my-5">
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <h1 className={styles.Titulo}>Nike</h1>
           <div className="container-fluid">
             <button
               className="navbar-toggler"
@@ -23,11 +23,11 @@ export const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                   <a href="/" className="nav-link">Productos</a>
+                   <a href="/" className="nav-link">INICIO</a>
                 </li>
-                <li className="nav-item">
+               {/* <li className="nav-item">
                      <a href="/PokeApi" className="nav-link">PokeApi</a>
-                </li>
+                </li> */}
 
                 <li className="nav-item">
                   <a  href="/counter" className="nav-link">

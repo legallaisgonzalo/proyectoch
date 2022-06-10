@@ -7,3 +7,4 @@ export const pedirDatos = () => {
       }, 2000);
     });
   };
+  
